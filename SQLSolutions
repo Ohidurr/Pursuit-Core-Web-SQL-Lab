@@ -1,0 +1,18 @@
+//Question 1
+  a. SELECT title FROM movies;
+  b. SELECT director FROM movies;
+  c. SELECT title, year FROM movies;
+  d. SELECT * FROM movies;
+
+//Question 2
+  a.  SELECT * FROM movies
+      WHERE id = 6
+
+  b. SELECT * FROM movies
+WHERE year BETWEEN 2000 AND 2010
+
+  c. SELECT * FROM movies
+WHERE year  NOT BETWEEN 2000 AND 2010
+
+  d. SELECT * FROM movies
+WHERE Year BETWEEN 1995 AND 2003
