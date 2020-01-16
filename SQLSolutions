@@ -16,3 +16,16 @@ WHERE year  NOT BETWEEN 2000 AND 2010
 
   d. SELECT * FROM movies
 WHERE Year BETWEEN 1995 AND 2003
+
+//Question 3:
+  a. SELECT * FROM movies
+WHERE Title LIKE 'Toy Story%'
+
+  b. SELECT * FROM movies
+WHERE Director LIKE 'John%'
+
+  c. SELECT * FROM movies
+WHERE Director NOT LIKE 'John%'
+
+  d. SELECT * FROM movies
+WHERE Title LIKE 'WALL-%'
