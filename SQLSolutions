@@ -29,3 +29,38 @@ WHERE Director NOT LIKE 'John%'
 
   d. SELECT * FROM movies
 WHERE Title LIKE 'WALL-%'
+
+//Question 4
+  a.SELECT distinct director
+FROM movies
+order by director ASC
+
+  b. SELECT distinct title
+FROM movies
+order by year DESC
+limit 4
+
+  c.SELECT distinct title
+FROM movies
+order by title ASC
+limit 5
+
+  d.SELECT distinct title
+FROM movies
+order by title ASC
+limit 5 offset 5
+
+*Review*
+  1.SELECT city, population
+FROM north_american_cities
+where country like 'canada'
+
+  2.SELECT distinct city
+FROM north_american_cities
+where country like 'United States'
+order by latitude DESC
+
+  3.
+
+//Question 5
+  a.
