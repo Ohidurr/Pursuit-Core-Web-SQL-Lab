@@ -60,7 +60,23 @@ FROM north_american_cities
 where country like 'United States'
 order by latitude DESC
 
-  3.
+  3. SELECT city
+FROM north_american_cities
+where longitude < -87.62979
+
+order by longitude ASC
+
+  4.SELECT city
+FROM north_american_cities
+where  country like 'Mexico'
+order by population DESC
+limit 2
+
+  5.SELECT city
+FROM north_american_cities
+where  country like 'United States'
+order by population DESC
+limit 2 offset 2
 
 //Question 5
   a.
