@@ -88,4 +88,31 @@ inner join movies
     on boxoffice.movie_id = movies.id
     where international_sales > domestic_sales
 
-  c.
+  c. select title, rating from boxoffice
+inner join movies
+    on boxoffice.movie_id = movies.id
+    order by rating DESC
+
+//Question 7
+  a.SELECT  distinct building FROM employees
+
+  b. SELECT distinct capacity,building_name FROM employees
+left join buildings
+    on  buildings.capacity
+
+  c. SELECT    distinct building_name,role FROM buildings
+left join employees
+    on  building_name = building
+
+//Question 8
+  a. SELECT name,role  FROM employees
+ where building is null
+
+ b. SELECT DISTINCT building_name
+FROM buildings
+  LEFT JOIN employees
+    ON building_name = building
+WHERE role IS NULL
+
+//Question 9
+  a.
