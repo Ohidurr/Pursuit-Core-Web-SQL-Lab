@@ -50,7 +50,7 @@ FROM movies
 order by title ASC
 limit 5 offset 5
 
-*Review*
+*Review* // Question 5
   1.SELECT city, population
 FROM north_american_cities
 where country like 'canada'
@@ -62,7 +62,7 @@ order by latitude DESC
 
   3. SELECT city
 FROM north_american_cities
-where longitude < -87.62979
+where longitude < -87.629798
 
 order by longitude ASC
 
@@ -78,5 +78,14 @@ where  country like 'United States'
 order by population DESC
 limit 2 offset 2
 
-//Question 5
-  a.
+//Question 6
+  a. select title, domestic_sales,international_sales from boxoffice
+inner join movies
+    on boxoffice.movie_id = movies.id
+
+  b. select title, domestic_sales,international_sales from boxoffice
+inner join movies
+    on boxoffice.movie_id = movies.id
+    where international_sales > domestic_sales
+
+  c.
